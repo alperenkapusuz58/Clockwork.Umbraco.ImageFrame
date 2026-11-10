@@ -21,8 +21,8 @@
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageIcon>icon.png</PackageIcon>
-    <PackageProjectUrl>https://github.com/clockwork-istanbul/Clockwork.Umbraco.ImageFrame</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/clockwork-istanbul/Clockwork.Umbraco.ImageFrame</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/alperenkapusuz58/Clockwork.Umbraco.ImageFrame</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/alperenkapusuz58/Clockwork.Umbraco.ImageFrame</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <Copyright>Copyright © Clockwork</Copyright>
   </PropertyGroup>

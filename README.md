@@ -8,6 +8,8 @@ It was built for a problem every agency knows: a "References" or "Partners" stri
 |---|---|---|---|
 | Supported | ✅ (.NET 8) | ✅ (.NET 10) | ✅ (.NET 10) |
 
+![Image Frame editor](https://raw.githubusercontent.com/alperenkapusuz58/Clockwork.Umbraco.ImageFrame/master/assets/screenshots/frame-editor.png)
+
 ## Why not the built-in Image Cropper?
 
 Umbraco's cropper only lets you zoom **in**: the image must always cover the crop area. Image Frame also lets you zoom **out**. Zooming out leaves (transparent or coloured) space around the image, which is exactly what you need to balance logos with different aspect ratios.
