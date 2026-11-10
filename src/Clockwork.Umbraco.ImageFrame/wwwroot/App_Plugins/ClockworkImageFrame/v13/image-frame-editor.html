@@ -1,0 +1,73 @@
+<div ng-controller="Clockwork.ImageFrame.EditorController as vm">
+    <umb-editor-view>
+        <umb-editor-header name="model.title" name-locked="true" hide-alias="true" hide-icon="true" hide-description="true"></umb-editor-header>
+
+        <umb-editor-container>
+            <div class="cw-if-layout">
+                <div class="cw-if-stage" cw-image-frame-stage tabindex="0">
+                    <div class="cw-if-frame" ng-class="{'cw-checker': !vm.config.background}" ng-style="vm.frameStyle()">
+                        <img ng-src="{{vm.url}}" alt="" draggable="false" ng-style="vm.imageStyle()" />
+                    </div>
+                    <div class="cw-if-mask" ng-style="vm.maskStyle()"></div>
+                </div>
+
+                <div class="cw-if-controls">
+                    <div class="cw-if-group">
+                        <div class="cw-if-label-row">
+                            <strong><localize key="clockworkImageFrame_zoom">Zoom</localize></strong>
+                            <span>{{vm.zoomPercent()}}%</span>
+                        </div>
+                        <div class="cw-if-slider-row">
+                            <button type="button" class="btn btn-default btn-sm" ng-click="vm.setZoom(vm.value.zoom / 1.1)"><umb-icon icon="icon-remove"></umb-icon></button>
+                            <input type="range" min="{{vm.zoomMin}}" max="{{vm.zoomMax}}" step="0.001" ng-model="vm.zoomSlider" ng-change="vm.onZoomSlider()" />
+                            <button type="button" class="btn btn-default btn-sm" ng-click="vm.setZoom(vm.value.zoom * 1.1)"><umb-icon icon="icon-add"></umb-icon></button>
+                        </div>
+                        <div class="cw-if-button-row">
+                            <button type="button" class="btn btn-default" ng-click="vm.fit()"><localize key="clockworkImageFrame_fit">Fit</localize></button>
+                            <button type="button" class="btn btn-default" ng-click="vm.fill()"><localize key="clockworkImageFrame_fill">Fill</localize></button>
+                            <button type="button" class="btn btn-default" ng-click="vm.center()"><localize key="clockworkImageFrame_center">Center</localize></button>
+                        </div>
+                    </div>
+
+                    <div class="cw-if-group" ng-if="vm.config.allowRotate">
+                        <div class="cw-if-label-row">
+                            <strong><localize key="clockworkImageFrame_rotate">Rotate</localize></strong>
+                            <span>{{vm.rotationLabel()}}°</span>
+                        </div>
+                        <div class="cw-if-slider-row">
+                            <button type="button" class="btn btn-default btn-sm" ng-click="vm.rotateBy(-90)"><umb-icon icon="icon-undo"></umb-icon></button>
+                            <input type="range" min="-45" max="45" step="0.5" ng-model="vm.fineRotation" ng-change="vm.onRotationSlider()" />
+                            <button type="button" class="btn btn-default btn-sm" ng-click="vm.rotateBy(90)"><umb-icon icon="icon-redo"></umb-icon></button>
+                        </div>
+                    </div>
+
+                    <div class="cw-if-group" ng-if="vm.config.allowFlip">
+                        <strong><localize key="clockworkImageFrame_flip">Flip</localize></strong>
+                        <div class="cw-if-button-row">
+                            <button type="button" class="btn" ng-class="vm.value.flipX ? 'btn-primary' : 'btn-default'" ng-click="vm.toggleFlipX()">
+                                <localize key="clockworkImageFrame_flipHorizontal">Horizontal</localize>
+                            </button>
+                            <button type="button" class="btn" ng-class="vm.value.flipY ? 'btn-primary' : 'btn-default'" ng-click="vm.toggleFlipY()">
+                                <localize key="clockworkImageFrame_flipVertical">Vertical</localize>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="cw-if-group cw-if-info">
+                        <span><localize key="clockworkImageFrame_outputSize">Output</localize>: <strong>{{vm.config.width}} × {{vm.config.height}} px</strong></span>
+                        <span ng-if="vm.imageWidth"><localize key="clockworkImageFrame_sourceSize">Source</localize>: {{vm.imageWidth}} × {{vm.imageHeight}} px</span>
+                        <small><localize key="clockworkImageFrame_hint"></localize></small>
+                        <button type="button" class="btn btn-link cw-if-danger" ng-click="vm.reset()"><localize key="clockworkImageFrame_reset">Reset</localize></button>
+                    </div>
+                </div>
+            </div>
+        </umb-editor-container>
+
+        <umb-editor-footer>
+            <umb-editor-footer-content-right>
+                <umb-button type="button" button-style="link" label-key="general_close" action="vm.close()"></umb-button>
+                <umb-button type="button" button-style="success" label-key="general_submit" action="vm.submit()"></umb-button>
+            </umb-editor-footer-content-right>
+        </umb-editor-footer>
+    </umb-editor-view>
+</div>

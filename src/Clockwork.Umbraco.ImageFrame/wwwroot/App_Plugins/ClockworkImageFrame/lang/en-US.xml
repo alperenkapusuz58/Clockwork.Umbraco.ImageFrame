@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<language alias="en" intName="English (US)" localName="English (US)" lcid="" culture="en-US">
+  <area alias="clockworkImageFrame">
+    <key alias="choose">Choose image</key>
+    <key alias="edit">Adjust</key>
+    <key alias="replace">Replace</key>
+    <key alias="editHeadline">Adjust image</key>
+    <key alias="stageLabel">Image frame. Drag to move, scroll to zoom, arrow keys to nudge.</key>
+    <key alias="zoom">Zoom</key>
+    <key alias="zoomIn">Zoom in</key>
+    <key alias="zoomOut">Zoom out</key>
+    <key alias="fit">Fit</key>
+    <key alias="fill">Fill</key>
+    <key alias="center">Center</key>
+    <key alias="rotate">Rotate</key>
+    <key alias="rotateLeft">Rotate left 90°</key>
+    <key alias="rotateRight">Rotate right 90°</key>
+    <key alias="flip">Flip</key>
+    <key alias="flipHorizontal">Horizontal</key>
+    <key alias="flipVertical">Vertical</key>
+    <key alias="reset">Reset</key>
+    <key alias="outputSize">Output</key>
+    <key alias="sourceSize">Source</key>
+    <key alias="frameSize">Frame</key>
+    <key alias="hint">Drag the image to position it, use the mouse wheel to zoom. Zooming out leaves empty space inside the frame, so wide and tall logos can be balanced.</key>
+    <key alias="notAnImage">The selected item is not an image.</key>
+    <key alias="missingMedia">The selected media item could not be found. It may have been deleted.</key>
+    <key alias="settingWidth">Frame width (px)</key>
+    <key alias="settingWidthDescription">Width of the rendered image, e.g. 300.</key>
+    <key alias="settingHeight">Frame height (px)</key>
+    <key alias="settingHeightDescription">Height of the rendered image, e.g. 150.</key>
+    <key alias="settingMinZoom">Minimum zoom</key>
+    <key alias="settingMinZoomDescription">1 = the image just fits inside the frame. Smaller values allow zooming out (adds empty space).</key>
+    <key alias="settingMaxZoom">Maximum zoom</key>
+    <key alias="settingAllowRotate">Allow rotate</key>
+    <key alias="settingAllowFlip">Allow flip</key>
+    <key alias="settingBackground">Background colour</key>
+    <key alias="settingBackgroundDescription">Leave empty for a transparent background.</key>
+    <key alias="settingOutputFormat">Output format</key>
+    <key alias="settingOutputFormatDescription">WebP is recommended. "Original" keeps the source format (PNG when transparency is needed).</key>
+    <key alias="settingQuality">Quality (1-100)</key>
+  </area>
+</language>

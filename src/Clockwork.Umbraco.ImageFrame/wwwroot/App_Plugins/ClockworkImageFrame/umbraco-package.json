@@ -1,0 +1,14 @@
+{
+  "id": "Clockwork.Umbraco.ImageFrame",
+  "name": "Clockwork Image Frame",
+  "version": "1.0.0",
+  "allowTelemetry": true,
+  "extensions": [
+    {
+      "type": "bundle",
+      "alias": "Clockwork.ImageFrame.Bundle",
+      "name": "Clockwork Image Frame Bundle",
+      "js": "/App_Plugins/ClockworkImageFrame/dist/clockwork-image-frame.js"
+    }
+  ]
+}

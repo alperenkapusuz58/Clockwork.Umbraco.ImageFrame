@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<language alias="tr" intName="Türkçe" localName="Türkçe" lcid="" culture="tr-TR">
+  <area alias="clockworkImageFrame">
+    <key alias="choose">Görsel seç</key>
+    <key alias="edit">Düzenle</key>
+    <key alias="replace">Değiştir</key>
+    <key alias="editHeadline">Görseli düzenle</key>
+    <key alias="stageLabel">Görsel çerçevesi. Taşımak için sürükleyin, yakınlaştırmak için kaydırın, ince ayar için ok tuşlarını kullanın.</key>
+    <key alias="zoom">Yakınlaştır</key>
+    <key alias="zoomIn">Yakınlaştır</key>
+    <key alias="zoomOut">Uzaklaştır</key>
+    <key alias="fit">Sığdır</key>
+    <key alias="fill">Doldur</key>
+    <key alias="center">Ortala</key>
+    <key alias="rotate">Döndür</key>
+    <key alias="rotateLeft">90° sola döndür</key>
+    <key alias="rotateRight">90° sağa döndür</key>
+    <key alias="flip">Çevir</key>
+    <key alias="flipHorizontal">Yatay</key>
+    <key alias="flipVertical">Dikey</key>
+    <key alias="reset">Sıfırla</key>
+    <key alias="outputSize">Çıktı</key>
+    <key alias="sourceSize">Kaynak</key>
+    <key alias="frameSize">Çerçeve</key>
+    <key alias="hint">Görseli sürükleyerek konumlandırın, fare tekerleğiyle yakınlaştırın. Uzaklaştırdığınızda çerçeve içinde boşluk kalır; böylece yatay ve dikey logolar dengelenebilir.</key>
+    <key alias="notAnImage">Seçilen öğe bir görsel değil.</key>
+    <key alias="missingMedia">Seçilen medya bulunamadı. Silinmiş olabilir.</key>
+    <key alias="settingWidth">Çerçeve genişliği (px)</key>
+    <key alias="settingWidthDescription">Üretilecek görselin genişliği, ör. 300.</key>
+    <key alias="settingHeight">Çerçeve yüksekliği (px)</key>
+    <key alias="settingHeightDescription">Üretilecek görselin yüksekliği, ör. 150.</key>
+    <key alias="settingMinZoom">En az yakınlaştırma</key>
+    <key alias="settingMinZoomDescription">1 = görsel çerçeveye tam sığar. Daha küçük değerler uzaklaştırmaya izin verir (boşluk ekler).</key>
+    <key alias="settingMaxZoom">En fazla yakınlaştırma</key>
+    <key alias="settingAllowRotate">Döndürmeye izin ver</key>
+    <key alias="settingAllowFlip">Çevirmeye izin ver</key>
+    <key alias="settingBackground">Arka plan rengi</key>
+    <key alias="settingBackgroundDescription">Şeffaf arka plan için boş bırakın.</key>
+    <key alias="settingOutputFormat">Çıktı formatı</key>
+    <key alias="settingOutputFormatDescription">WebP önerilir. "Orijinal" kaynak formatını korur (şeffaflık gerekiyorsa PNG).</key>
+    <key alias="settingQuality">Kalite (1-100)</key>
+  </area>
+</language>

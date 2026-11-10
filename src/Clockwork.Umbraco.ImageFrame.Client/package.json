@@ -1,0 +1,15 @@
+{
+  "name": "clockwork-umbraco-imageframe-client",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "tsc && vite build && node scripts/build-v13-lang.mjs",
+    "watch": "vite build --watch"
+  },
+  "devDependencies": {
+    "@umbraco-cms/backoffice": "17.4.2",
+    "typescript": "5.8.3",
+    "vite": "6.3.5"
+  }
+}

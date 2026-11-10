@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/Clockwork.Umbraco.ImageFrame/Clockwork.Umbraco.ImageFrame.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/Clockwork.Umbraco.ImageFrame.Tests/Clockwork.Umbraco.ImageFrame.Tests.csproj" />
+  </Folder>
+</Solution>

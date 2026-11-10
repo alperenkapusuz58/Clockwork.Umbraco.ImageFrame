@@ -1,0 +1,48 @@
+{
+  "name": "Clockwork Image Frame",
+  "version": "1.0.0",
+  "allowPackageTelemetry": true,
+  "propertyEditors": [
+    {
+      "alias": "Clockwork.ImageFrame",
+      "name": "Clockwork Image Frame",
+      "icon": "icon-crop",
+      "group": "Media",
+      "editor": {
+        "view": "~/App_Plugins/ClockworkImageFrame/v13/image-frame.html",
+        "valueType": "JSON",
+        "hideLabel": false
+      },
+      "prevalues": {
+        "fields": [
+          { "key": "width", "label": "Frame width (px)", "description": "Width of the rendered image, e.g. 300.", "view": "number" },
+          { "key": "height", "label": "Frame height (px)", "description": "Height of the rendered image, e.g. 150.", "view": "number" },
+          { "key": "minZoom", "label": "Minimum zoom", "description": "1 = the image just fits inside the frame. Smaller values allow zooming out (adds empty space).", "view": "decimal" },
+          { "key": "maxZoom", "label": "Maximum zoom", "view": "decimal" },
+          { "key": "allowRotate", "label": "Allow rotate", "view": "boolean" },
+          { "key": "allowFlip", "label": "Allow flip", "view": "boolean" },
+          { "key": "background", "label": "Background colour", "description": "Hex colour such as #ffffff. Leave empty for a transparent background.", "view": "textstring" },
+          { "key": "outputFormat", "label": "Output format", "description": "webp (recommended), png, jpg or auto (keep the source format).", "view": "textstring" },
+          { "key": "quality", "label": "Quality (1-100)", "view": "number" }
+        ]
+      },
+      "defaultConfig": {
+        "width": 300,
+        "height": 150,
+        "minZoom": 0.2,
+        "maxZoom": 4,
+        "allowRotate": true,
+        "allowFlip": true,
+        "background": "",
+        "outputFormat": "webp",
+        "quality": 90
+      }
+    }
+  ],
+  "javascript": [
+    "~/App_Plugins/ClockworkImageFrame/v13/image-frame.js"
+  ],
+  "css": [
+    "~/App_Plugins/ClockworkImageFrame/v13/image-frame.css"
+  ]
+}

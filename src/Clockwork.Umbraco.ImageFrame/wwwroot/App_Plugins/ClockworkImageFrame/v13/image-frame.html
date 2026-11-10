@@ -1,0 +1,43 @@
+<div class="cw-image-frame-editor" ng-controller="Clockwork.ImageFrame.PropertyEditorController as vm">
+
+    <div class="cw-if-selected" ng-if="vm.value">
+        <button type="button"
+                class="cw-if-preview"
+                ng-class="{'cw-checker': !vm.config.background}"
+                ng-style="vm.previewStyle"
+                ng-disabled="vm.readonly || !vm.url"
+                ng-click="vm.edit()">
+            <img ng-if="vm.url" ng-src="{{vm.url}}" alt="{{vm.name}}" ng-style="vm.imageStyle()" />
+            <umb-load-indicator ng-if="!vm.url && vm.loading"></umb-load-indicator>
+            <umb-icon ng-if="!vm.url && !vm.loading" icon="icon-alert"></umb-icon>
+        </button>
+
+        <div class="cw-if-meta">
+            <strong>{{vm.name}}</strong>
+            <small>
+                <localize key="clockworkImageFrame_frameSize">Frame</localize>:
+                {{vm.config.width}} × {{vm.config.height}} px · {{vm.value.zoom * 100 | number:0}}%
+            </small>
+            <div class="cw-if-actions" ng-if="!vm.readonly">
+                <button type="button" class="btn btn-primary" ng-click="vm.edit()" ng-disabled="!vm.url">
+                    <umb-icon icon="icon-crop"></umb-icon>
+                    <localize key="clockworkImageFrame_edit">Adjust</localize>
+                </button>
+                <button type="button" class="btn btn-default" ng-click="vm.pick()">
+                    <localize key="clockworkImageFrame_replace">Replace</localize>
+                </button>
+                <button type="button" class="btn btn-link cw-if-danger" ng-click="vm.remove()">
+                    <localize key="general_remove">Remove</localize>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <button type="button" class="cw-if-add umb-node-preview-add" ng-if="!vm.value" ng-click="vm.pick()" ng-disabled="vm.readonly">
+        <umb-icon icon="icon-add"></umb-icon>
+        <localize key="clockworkImageFrame_choose">Choose image</localize>
+        <small>{{vm.config.width}} × {{vm.config.height}} px</small>
+    </button>
+
+    <div class="cw-if-error" ng-if="vm.error">{{vm.error}}</div>
+</div>

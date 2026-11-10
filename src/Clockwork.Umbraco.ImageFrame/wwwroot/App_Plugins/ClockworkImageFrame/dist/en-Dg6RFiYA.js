@@ -1,0 +1,45 @@
+const e = {
+  clockworkImageFrame: {
+    choose: "Choose image",
+    edit: "Adjust",
+    replace: "Replace",
+    editHeadline: "Adjust image",
+    stageLabel: "Image frame. Drag to move, scroll to zoom, arrow keys to nudge.",
+    zoom: "Zoom",
+    zoomIn: "Zoom in",
+    zoomOut: "Zoom out",
+    fit: "Fit",
+    fill: "Fill",
+    center: "Center",
+    rotate: "Rotate",
+    rotateLeft: "Rotate left 90°",
+    rotateRight: "Rotate right 90°",
+    flip: "Flip",
+    flipHorizontal: "Horizontal",
+    flipVertical: "Vertical",
+    reset: "Reset",
+    outputSize: "Output",
+    sourceSize: "Source",
+    frameSize: "Frame",
+    hint: "Drag the image to position it, use the mouse wheel to zoom. Zooming out leaves empty space inside the frame, so wide and tall logos can be balanced.",
+    notAnImage: "The selected item is not an image.",
+    missingMedia: "The selected media item could not be found. It may have been deleted.",
+    settingWidth: "Frame width (px)",
+    settingWidthDescription: "Width of the rendered image, e.g. 300.",
+    settingHeight: "Frame height (px)",
+    settingHeightDescription: "Height of the rendered image, e.g. 150.",
+    settingMinZoom: "Minimum zoom",
+    settingMinZoomDescription: "1 = the image just fits inside the frame. Smaller values allow zooming out (adds empty space).",
+    settingMaxZoom: "Maximum zoom",
+    settingAllowRotate: "Allow rotate",
+    settingAllowFlip: "Allow flip",
+    settingBackground: "Background colour",
+    settingBackgroundDescription: "Leave empty for a transparent background.",
+    settingOutputFormat: "Output format",
+    settingOutputFormatDescription: 'WebP is recommended. "Original" keeps the source format (PNG when transparency is needed).',
+    settingQuality: "Quality (1-100)"
+  }
+};
+export {
+  e as default
+};

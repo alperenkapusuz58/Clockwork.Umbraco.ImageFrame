@@ -1,0 +1,18 @@
+{
+  "$schema": "https://marketplace.umbraco.com/umbraco-marketplace-schema.json",
+  "AuthorDetails": {
+    "Name": "Clockwork",
+    "Url": "https://www.clockwork.com.tr",
+    "Contributors": []
+  },
+  "Category": "Editor Tools",
+  "Description": "Place every image inside a fixed frame and let editors zoom in and out, pan, rotate and flip it, like a profile picture editor. Keeps reference logos, partner badges, icons and cover images visually consistent. Works with Umbraco 13, 17 and 18.",
+  "DocumentationUrl": "https://github.com/clockwork-istanbul/Clockwork.Umbraco.ImageFrame#readme",
+  "IssueTrackerUrl": "https://github.com/clockwork-istanbul/Clockwork.Umbraco.ImageFrame/issues",
+  "LicenseTypes": ["Free"],
+  "PackageType": "Package",
+  "Screenshots": [],
+  "Tags": ["image", "logo", "crop", "media picker", "property editor"],
+  "Title": "Clockwork Image Frame",
+  "VersionDependencyMode": "SemVer"
+}
